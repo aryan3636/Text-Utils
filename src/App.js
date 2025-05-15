@@ -62,7 +62,18 @@ function App() {
               <TextForm
                 showAlert={showAlert}
                 themeColor={themeColor}
-                heading="TextUtils - Word counter, character counter"
+                heading="Try below TextUtils features"
+                mode={mode}
+              />
+            }
+            />
+          <Route
+            path="/home"
+            element ={
+              <TextForm
+                showAlert={showAlert}
+                themeColor={themeColor}
+                heading="Try below TextUtils features"
                 mode={mode}
               />
             }
