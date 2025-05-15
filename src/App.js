@@ -57,7 +57,7 @@ function App() {
             }
           />
           <Route
-            path="/textForm"
+            path="/"
             element ={
               <TextForm
                 showAlert={showAlert}

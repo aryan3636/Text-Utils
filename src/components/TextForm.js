@@ -35,6 +35,7 @@ export default function TextForm(props) {
         <textarea style={{backgroundColor: props.mode === 'dark' ? '#1a1a1a' : 'white' , color: props.mode === 'light' ? 'black' : 'white'}} value={text} onChange={handleOnChange} className="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
       </div>
       <button
+        disabled= {text.length === 0}
         className="btn mx-1"
         style={{
           backgroundColor: props.mode === 'dark' ? props.themeColor : '#0d6efd',
@@ -45,7 +46,9 @@ export default function TextForm(props) {
       >
         Convert to uppercase
       </button>
-      <button className="btn mx-1" 
+      <button 
+        disabled= {text.length === 0}
+        className="btn mx-1" 
         style={{
           backgroundColor: props.mode === 'dark' ? props.themeColor : '#0d6efd',
           color: 'white',
@@ -54,7 +57,9 @@ export default function TextForm(props) {
         onClick={handleLoClick}>
         Convert to lowercase
       </button>
-      <button className="btn mx-1" 
+      <button 
+        disabled= {text.length === 0}
+        className="btn mx-1" 
         style={{
           backgroundColor: props.mode === 'dark' ? props.themeColor : '#0d6efd',
           color: 'white',
@@ -63,7 +68,9 @@ export default function TextForm(props) {
         onClick={handleClearClick}>
         Clear
       </button>
-      <button className="btn mx-1" 
+      <button 
+        disabled= {text.length === 0}
+        className="btn mx-1" 
         style={{
           backgroundColor: props.mode === 'dark' ? props.themeColor : '#0d6efd',
           color: 'white',
